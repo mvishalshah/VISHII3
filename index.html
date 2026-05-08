@@ -509,7 +509,7 @@ const firebaseConfig = {
   appId: "1:676658769511:web:7815bf552ad54c22d32ec2",
 };
 
-const GEMINI_API_KEY = "AIzaSyBNB2TA0Pil8Hw5Gl9Tkm2p1PUp6IPOXoI";
+const GEMINI_API_KEY = "AIzaSyDm7OxSP2O7tKNDY3Jym8GLNWUemCS9q28";
 </script>
 
 <!-- ══════════════════════════════════════════
@@ -527,7 +527,7 @@ const storage  = firebase.storage();
 const provider = new firebase.auth.GoogleAuthProvider();
 
 /* ── GEMINI ENDPOINT ──────────────────────── */
-const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
+const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
 /* ── STATE ────────────────────────────────── */
 let currentUser    = null;
