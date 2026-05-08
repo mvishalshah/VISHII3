@@ -527,7 +527,7 @@ const storage  = firebase.storage();
 const provider = new firebase.auth.GoogleAuthProvider();
 
 /* ── GEMINI ENDPOINT ──────────────────────── */
-const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${AIzaSyDm7OxSP2O7tKNDY3Jym8GLNWUemCS9q28}`;
+const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
 /* ── STATE ────────────────────────────────── */
 let currentUser    = null;
@@ -960,7 +960,6 @@ function safe(str){
     .replace(/\n/g,"<br>");
 }
 
-})();
 </script>
 
 <!-- ══════════════════════════════════════════
